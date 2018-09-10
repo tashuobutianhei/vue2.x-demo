@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <tabs v-model='activeKey'>
+            <pane label="one" name="1">哈哈哈哈哈哈哈哈哈一</pane>
+            <pane label="two" name="2">标签二内容</pane>
+            <pane label="three" name="3">标签三内容</pane>
+        </tabs>
+    </div>
+<script src="pane.js"></script>
+<script src="tabs.js"></script>
+<script>
+    var app = new Vue({
+        el:'#app',
+        data:{
+            activeKey:'1'
+        }
+    })
+</script>
+</body>
+</html>

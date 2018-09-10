@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src='../../jquery-1.7.2/jquery.js'></script>
+</head>
+<body>
+<script>
+    $.ajax({
+        url:'http://www.baidu.com/s?wd=米饭',
+        dataType:'jsonp',
+        success:function (eve) {
+            console.log(eve)
+        }
+
+    })
+</script>
+</body>
+</html>

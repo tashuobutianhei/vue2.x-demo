@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+    <div>
+        <v-input v-model="name"> </v-input>
+        <v-textarea ref="text" v-model="text"> </v-textarea>
+        <button @click="handle">发布</button>
+    </div>
+
+    <list :list="list" @replay="handleReplay"></list>
+</div>
+
+<script src="list.js"></script>
+<script src="input.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
